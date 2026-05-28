@@ -60,10 +60,10 @@ export default function Logs() {
   });
 
   if (loading) {
-    return <div className="p-8 max-w-[1400px] mx-auto flex justify-center items-center h-[50vh]"><div className="animate-pulse flex items-center gap-2"><div className="w-4 h-4 rounded-full bg-blue-500"></div>Loading logs...</div></div>;
+    return <div className="p-8 max-w-[1600px] mx-auto flex justify-center items-center h-[50vh]"><div className="animate-pulse flex items-center gap-2"><div className="w-4 h-4 rounded-full bg-blue-500"></div>Loading logs...</div></div>;
   }
   return (
-    <div className="p-4 md:p-8 max-w-[1400px] mx-auto space-y-6">
+    <div className="p-4 md:p-8 max-w-[1600px] w-full mx-auto space-y-6">
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between">
         <div>
           <h1 className="text-2xl font-semibold text-gray-900">Logs</h1>

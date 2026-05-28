@@ -39,7 +39,7 @@ export default function UploadEmails() {
   };
 
   return (
-    <div className="p-4 md:p-8 max-w-5xl mx-auto space-y-8">
+    <div className="p-4 md:p-8 max-w-[1400px] w-full mx-auto space-y-8">
       <div>
         <h1 className="text-2xl font-semibold text-gray-900">Upload Emails</h1>
         <p className="text-sm text-gray-500 mt-1">Drag and drop a recipient list to get started</p>

@@ -3,7 +3,7 @@ import { toast } from 'sonner';
 
 export default function TemplatePreview() {
   return (
-    <div className="p-8 max-w-7xl mx-auto space-y-6 h-full flex flex-col">
+    <div className="p-4 md:p-8 max-w-7xl mx-auto space-y-6 h-full flex flex-col">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-semibold text-gray-900">Email Template Preview</h1>
@@ -15,9 +15,9 @@ export default function TemplatePreview() {
         </button>
       </div>
 
-      <div className="grid grid-cols-12 gap-6 flex-1">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 flex-1">
         {/* Left Column - Details */}
-        <div className="col-span-4 space-y-4">
+        <div className="lg:col-span-4 space-y-4">
           <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
             <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Template</h3>
             <p className="text-sm font-medium text-gray-900">Q4 Product Launch Announcement</p>
@@ -51,20 +51,20 @@ export default function TemplatePreview() {
         </div>
 
         {/* Right Column - Email Preview */}
-        <div className="col-span-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col overflow-hidden">
+        <div className="lg:col-span-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col overflow-hidden">
           {/* Email Header */}
-          <div className="border-b border-gray-100 p-6 flex gap-4 items-center">
+          <div className="border-b border-gray-100 p-4 md:p-6 flex gap-4 items-center">
             <div className="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
               <Mail className="w-5 h-5" />
             </div>
             <div>
-              <h2 className="text-base font-semibold text-gray-900">Introducing our biggest release of the year 🚀</h2>
-              <p className="text-sm text-gray-500">Acme Inc. &lt;hello@acme.co&gt;</p>
+              <h2 className="text-base font-semibold text-gray-900 line-clamp-1">Introducing our biggest release of the year 🚀</h2>
+              <p className="text-sm text-gray-500 truncate max-w-[200px] sm:max-w-none">Acme Inc. &lt;hello@acme.co&gt;</p>
             </div>
           </div>
           
           {/* Email Body */}
-          <div className="p-12 flex-1 bg-white overflow-y-auto">
+          <div className="p-6 md:p-12 flex-1 bg-white overflow-y-auto">
             <div className="max-w-xl mx-auto space-y-6 text-gray-800 leading-relaxed">
               <h1 className="text-2xl font-bold text-gray-900 mb-6">Hi {"{{first_name}}"},</h1>
               

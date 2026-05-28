@@ -55,8 +55,8 @@ export default function SendingQueue() {
   };
 
   return (
-    <div className="p-8 max-w-6xl mx-auto space-y-6">
-      <div className="flex items-center justify-between">
+    <div className="p-4 md:p-8 max-w-6xl mx-auto space-y-6">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between">
         <div>
           <h1 className="text-2xl font-semibold text-gray-900">Sending Queue</h1>
           <p className="text-sm text-gray-500 mt-1">Live status of the active sending job</p>
@@ -120,14 +120,14 @@ export default function SendingQueue() {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard title="Emails per second" value={emailsPerSec} icon={Activity} color="blue" />
         <StatCard title="Remaining" value={remaining.toLocaleString()} icon={Clock} color="blue" />
         <StatCard title="Failed" value={failed} icon={XCircle} color="red" />
         <StatCard title="Sent" value={processed.toLocaleString()} icon={CheckCircle2} color="green" />
       </div>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-between">
+      <div className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between">
         <div>
           <h2 className="text-base font-semibold text-gray-900">Failed deliveries</h2>
           <p className="text-sm text-gray-500 mt-1">{failed} messages need attention</p>

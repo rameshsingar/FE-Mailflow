@@ -63,8 +63,8 @@ export default function Logs() {
     return <div className="p-8 max-w-[1400px] mx-auto flex justify-center items-center h-[50vh]"><div className="animate-pulse flex items-center gap-2"><div className="w-4 h-4 rounded-full bg-blue-500"></div>Loading logs...</div></div>;
   }
   return (
-    <div className="p-8 max-w-[1400px] mx-auto space-y-6">
-      <div className="flex items-center justify-between">
+    <div className="p-4 md:p-8 max-w-[1400px] mx-auto space-y-6">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between">
         <div>
           <h1 className="text-2xl font-semibold text-gray-900">Logs</h1>
           <p className="text-sm text-gray-500 mt-1">Per-recipient delivery history</p>
@@ -79,8 +79,8 @@ export default function Logs() {
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl shadow-sm flex flex-col h-[calc(100vh-180px)]">
-        <div className="p-4 border-b border-gray-200 flex gap-4">
-          <div className="relative flex-1">
+        <div className="p-4 border-b border-gray-200 flex flex-col xl:flex-row gap-4">
+          <div className="relative flex-1 w-full">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
             <input 
               type="text" 
@@ -90,7 +90,7 @@ export default function Logs() {
               className="w-full pl-9 pr-4 py-2 bg-gray-50/50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"
             />
           </div>
-          <div className="flex bg-gray-50/50 border border-gray-200 rounded-lg p-1">
+          <div className="flex flex-wrap bg-gray-50/50 border border-gray-200 rounded-lg p-1 w-full xl:w-auto">
             {['All', 'Sent', 'Failed', 'Pending', 'Retrying'].map((filter, i) => (
               <button 
                 key={filter}

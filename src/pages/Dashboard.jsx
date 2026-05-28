@@ -38,8 +38,8 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="p-8 max-w-7xl mx-auto space-y-6">
-      <div className="flex items-center justify-between">
+    <div className="p-4 md:p-8 max-w-7xl mx-auto space-y-6">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between">
         <div>
           <h1 className="text-2xl font-semibold text-gray-900">Dashboard</h1>
           <p className="text-sm text-gray-500 mt-1">Real-time overview of your email campaigns</p>
@@ -53,7 +53,7 @@ export default function Dashboard() {
         </button>
       </div>
 
-      <div className="grid grid-cols-6 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
         {/* Stat Cards */}
         <StatCard title="Total Uploaded" value={data.stats.totalUploaded} icon={Mail} color="blue" />
         <StatCard title="Sent" value={data.stats.sent} trend={data.stats.sentTrend} icon={CheckCircle2} color="green" />
@@ -63,8 +63,8 @@ export default function Dashboard() {
         <StatCard title="Emails / sec" value={data.stats.emailsPerSec} icon={Activity} color="purple" />
       </div>
 
-      <div className="grid grid-cols-3 gap-6">
-        <div className="col-span-2 bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="lg:col-span-2 bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
           <div className="mb-4">
             <h2 className="text-base font-semibold text-gray-900">Sending Activity</h2>
             <p className="text-xs text-gray-500 mt-0.5">Last 16 hours</p>
@@ -88,7 +88,7 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="col-span-1 bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex flex-col">
+        <div className="lg:col-span-1 bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex flex-col">
           <div className="mb-6">
             <h2 className="text-base font-semibold text-gray-900">Queue Progress</h2>
             <p className="text-xs text-gray-500 mt-0.5">Active campaigns</p>

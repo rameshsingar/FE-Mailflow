@@ -39,7 +39,7 @@ export default function UploadEmails() {
   };
 
   return (
-    <div className="p-8 max-w-5xl mx-auto space-y-8">
+    <div className="p-4 md:p-8 max-w-5xl mx-auto space-y-8">
       <div>
         <h1 className="text-2xl font-semibold text-gray-900">Upload Emails</h1>
         <p className="text-sm text-gray-500 mt-1">Drag and drop a recipient list to get started</p>
@@ -55,7 +55,7 @@ export default function UploadEmails() {
 
       <div 
         onClick={handleDivClick}
-        className={`border-2 border-dashed rounded-2xl bg-white p-16 flex flex-col items-center justify-center text-center transition-all cursor-pointer group active:scale-[0.99] ${
+        className={`border-2 border-dashed rounded-2xl bg-white p-8 md:p-16 flex flex-col items-center justify-center text-center transition-all cursor-pointer group active:scale-[0.99] ${
           uploadStatus === 'idle' 
             ? 'border-gray-200 hover:border-blue-400 hover:bg-blue-50/50' 
             : uploadStatus === 'uploading'
@@ -101,7 +101,7 @@ export default function UploadEmails() {
         )}
       </div>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <FeatureCard 
           icon={FileSpreadsheet}
           title="XLSX & CSV"

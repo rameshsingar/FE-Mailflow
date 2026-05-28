@@ -1,13 +1,23 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { UploadCloud, FileSpreadsheet, CheckCircle, ShieldAlert, Loader2, CheckCircle2 } from 'lucide-react';
 import { toast } from 'sonner';
 
 export default function UploadEmails() {
   const [uploadStatus, setUploadStatus] = useState('idle');
   const [progress, setProgress] = useState(0);
+  const fileInputRef = useRef(null);
 
-  const handleUpload = () => {
-    if (uploadStatus !== 'idle') return;
+  const handleDivClick = () => {
+    if (uploadStatus === 'idle') {
+      fileInputRef.current?.click();
+    }
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    
+    // Simulate upload starting
     setUploadStatus('uploading');
     setProgress(0);
     
@@ -35,8 +45,16 @@ export default function UploadEmails() {
         <p className="text-sm text-gray-500 mt-1">Drag and drop a recipient list to get started</p>
       </div>
 
+      <input 
+        type="file" 
+        ref={fileInputRef} 
+        onChange={handleFileChange} 
+        className="hidden" 
+        accept=".csv, .xlsx, .xls" 
+      />
+
       <div 
-        onClick={handleUpload}
+        onClick={handleDivClick}
         className={`border-2 border-dashed rounded-2xl bg-white p-16 flex flex-col items-center justify-center text-center transition-all cursor-pointer group active:scale-[0.99] ${
           uploadStatus === 'idle' 
             ? 'border-gray-200 hover:border-blue-400 hover:bg-blue-50/50' 

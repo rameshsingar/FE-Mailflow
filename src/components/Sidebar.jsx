@@ -25,7 +25,7 @@ export default function Sidebar({ onClose }) {
 
   return (
     <div className="w-[260px] h-full bg-bg-sidebar border-r border-gray-200 flex flex-col pt-6 pb-6 shadow-sm">
-      <div className="px-6 hidden lg:flex items-center gap-3 mb-8">
+      <div className="px-6 flex items-center gap-3 mb-8">
         <div className="bg-primary text-white p-1.5 rounded-lg">
           <Send className="w-5 h-5 -rotate-45" />
         </div>

@@ -33,7 +33,7 @@ export default function Layout() {
       )}
 
       {/* Sidebar Content */}
-      <div className={`fixed inset-y-0 left-0 z-30 transform transition-transform duration-300 lg:relative lg:transform-none ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`fixed inset-y-0 left-0 z-30 transition-transform duration-300 lg:relative lg:translate-x-0 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <Sidebar onClose={() => setIsSidebarOpen(false)} />
       </div>
 

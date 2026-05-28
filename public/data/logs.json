@@ -1,0 +1,18 @@
+[
+  { "recipient": "user1@acme.co", "status": "Sent", "error": "—", "sentAt": "28/5/2026, 4:03:00 pm", "retries": 0 },
+  { "recipient": "user2@globex.io", "status": "Sent", "error": "—", "sentAt": "28/5/2026, 4:02:00 pm", "retries": 0 },
+  { "recipient": "user3@initech.com", "status": "Sent", "error": "—", "sentAt": "28/5/2026, 4:01:00 pm", "retries": 0 },
+  { "recipient": "user4@umbrella.org", "status": "Sent", "error": "—", "sentAt": "28/5/2026, 4:00:00 pm", "retries": 0 },
+  { "recipient": "user5@acme.co", "status": "Failed", "error": "550 5.1.1 Mailbox does not exist", "sentAt": "28/5/2026, 3:59:00 pm", "retries": 0, "canRetry": true },
+  { "recipient": "user6@globex.io", "status": "Pending", "error": "—", "sentAt": "—", "retries": 0 },
+  { "recipient": "user7@initech.com", "status": "Retrying", "error": "—", "sentAt": "28/5/2026, 3:57:00 pm", "retries": 1 },
+  { "recipient": "user8@umbrella.org", "status": "Sent", "error": "—", "sentAt": "28/5/2026, 3:56:00 pm", "retries": 0 },
+  { "recipient": "user9@acme.co", "status": "Sent", "error": "—", "sentAt": "28/5/2026, 3:55:00 pm", "retries": 0 },
+  { "recipient": "user10@globex.io", "status": "Sent", "error": "—", "sentAt": "28/5/2026, 3:54:00 pm", "retries": 0 },
+  { "recipient": "user11@initech.com", "status": "Sent", "error": "—", "sentAt": "28/5/2026, 3:53:00 pm", "retries": 0 },
+  { "recipient": "user12@umbrella.org", "status": "Failed", "error": "DNS resolution failed", "sentAt": "28/5/2026, 3:52:00 pm", "retries": 0, "canRetry": true },
+  { "recipient": "user13@acme.co", "status": "Pending", "error": "—", "sentAt": "—", "retries": 0 },
+  { "recipient": "user14@globex.io", "status": "Retrying", "error": "—", "sentAt": "28/5/2026, 3:50:00 pm", "retries": 2 },
+  { "recipient": "user15@initech.com", "status": "Sent", "error": "—", "sentAt": "28/5/2026, 3:49:00 pm", "retries": 0 },
+  { "recipient": "user16@umbrella.org", "status": "Sent", "error": "—", "sentAt": "28/5/2026, 3:48:00 pm", "retries": 0 }
+]

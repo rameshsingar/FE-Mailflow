@@ -1,0 +1,35 @@
+{
+  "stats": {
+    "totalUploaded": "18,305",
+    "sent": "14,210",
+    "sentTrend": "+12.4%",
+    "failed": "312",
+    "failedTrend": "-0.8%",
+    "pending": "3,783",
+    "successRate": "97.85%",
+    "emailsPerSec": "24"
+  },
+  "chartData": [
+    { "time": "00:00", "sent": 100, "failed": 5 },
+    { "time": "02:00", "sent": 220, "failed": 10 },
+    { "time": "04:00", "sent": 180, "failed": 8 },
+    { "time": "06:00", "sent": 350, "failed": 12 },
+    { "time": "08:00", "sent": 500, "failed": 15 },
+    { "time": "10:00", "sent": 580, "failed": 18 },
+    { "time": "12:00", "sent": 680, "failed": 22 },
+    { "time": "14:00", "sent": 850, "failed": 25 },
+    { "time": "16:00", "sent": 700, "failed": 20 }
+  ],
+  "queueProgress": {
+    "percentage": 78,
+    "processed": "14,210",
+    "remaining": "3,783"
+  },
+  "recentUploads": [
+    { "file": "q4-newsletter-recipients.xlsx", "recipients": "12,480", "status": "Completed", "date": "21/5/2026, 7:52:00 pm" },
+    { "file": "product-launch-list.csv", "recipients": "3,210", "status": "Sending", "date": "22/5/2026, 2:44:00 pm" },
+    { "file": "vip-customers.xlsx", "recipients": "482", "status": "Ready", "date": "22/5/2026, 4:32:00 pm" },
+    { "file": "partners-may.csv", "recipients": "1,893", "status": "Completed", "date": "20/5/2026, 10:18:00 pm" },
+    { "file": "beta-invites.xlsx", "recipients": "240", "status": "Failed", "date": "19/5/2026, 3:30:00 pm" }
+  ]
+}

@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  
+  /* Primary blue from screenshots */
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  
+  /* Background colors */
+  --color-bg-base: #f9fafb;
+  --color-bg-sidebar: #fbfbfc;
+  
+  /* Status Colors */
+  --color-status-sent-bg: #dcfce7;
+  --color-status-sent-text: #166534;
+  --color-status-failed-bg: #fee2e2;
+  --color-status-failed-text: #991b1b;
+  --color-status-pending-bg: #f3f4f6;
+  --color-status-pending-text: #374151;
+  --color-status-retrying-bg: #fef3c7;
+  --color-status-retrying-text: #92400e;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-base text-gray-900;
+  }
+}
